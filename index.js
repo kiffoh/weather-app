@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Current
     let condition = Data["current"]["condition"]["text"];
     let conditionImg = Data["current"]["condition"]["icon"];
+    conditionImg = conditionImg.replace('64x64', '128x128');
     let feelsLikeC = Data["current"]["feelslike_c"];
     let gustMPH = Data["current"]["gust_mph"];
     let precipMM = Data["current"]["precip_mm"];
